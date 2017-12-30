@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/*Type Selcetors*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/*Psuedo-Class*/
+
+nav.black {
+    background: rgba(0,0,0,.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+/*nav.black .fa fa-facebook {
+    background: rgba(206, 220, 244, 0.8);
+    height: 80px;
+    padding: 10px 50px;
+}*/
+
+/* talk to erin about content
+
+
+.content{
+    width: 960px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}*/
+
+
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    height: 55px;
+    transition: .5s;
+}
+
+nav .black .logo img {
+    height: 60px;
+}
+
+nav.black ul.social li {
+    background: transparent;
+    transition: .5s;
+}
+
+nav.black ul.nav-links li a {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 60px;
+}
+
+nav.black ul li a.account-links{
+    color: #ffffff;
+}
+
+nav ul.nav-links li a.register{
+    color: rgba(250, 7, 7, 0.72);
+}
+
+
+nav ul.nav-links {
+    float: left;
+    margin: 0;
+    padding-left: 2em;
+    display: flex;
+}
+
+nav ul.nav-links li a {
+    line-height: 80px;
+    color: #000000;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+
+}
+
+nav ul.social {
+    float: right;
+
+    display: flex;
+}
+
+nav ul.social li a {
+    line-height: 0px;
+    color: #000000;
+    display: inline-block;
+    padding: 11px 14px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+
+}
+
+
+
+
+nav ul li i.fa{
+    color: #ffffff;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+.social li {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, .8);
+
+
+}
+
+.social {
+
+}
+
+/*Pseudo Classes*/
+nav ul li a.active,
+nav ul li a:hover {
+    color: #ff0000;
+
+}
+
+nav.black ul li a:hover {
+    color: #ff0000;
+}
+
+/*this is a 2nd option for main image in ***section1*** .... img/riley-blunt.jpg*/
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url(img/ncp-board.jpg);
+    background-size: cover;
+}
+
+section.sec2{
+    width: 100%;
+    height: 100vh;
+    background: url(img/i-need-stickers.jpg);
+    background-size: cover;
+}
+section.sec3{
+    width: 100%;
+    height: 100vh;
+    background: url(img/the-crew.jpg);
+    background-size: cover;
+}
+
+section.content{
+    padding: 100px;
+}
+
+section.content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+section.content p{
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 1.1em;
+}

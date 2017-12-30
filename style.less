@@ -1,0 +1,42 @@
+nav {
+    .logo {
+        float: left;
+
+        img {
+            height: 55px;
+            transition: .5s;
+        }
+
+    }
+
+    ul {
+        &.nav-links {
+            float: left;
+            margin: 0;
+            padding-left: 2em;
+            display: flex;
+
+            li {
+                a {
+                    line-height: 80px;
+                    color: #000000;
+                    padding: 5px 20px;
+                    font-family: 'Roboto', sans-serif;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: .5s;
+
+                    &.register {
+
+                    }
+                }
+
+            }
+        }
+
+        &.social {
+            float: right;
+            display: flex;
+        }
+    }
+}
