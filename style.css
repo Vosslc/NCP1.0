@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 
+* {
+  box-sizing: border-box;
+}
+
 
 body {
     margin: 0;
@@ -20,28 +24,23 @@ nav {
     height: 80px;
     padding: 10px 100px;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.53);
     transition: .5s;
 }
 
 
 nav.black {
-    background: rgba(0,0,0,.8);
+
+    background: rgba(0, 0, 0, 0.8);
     height: 80px;
     padding: 10px 50px;
 }
 
 
-
-
-
-
-nav .logo {
-    float: left;
-}
-
 nav .logo img {
     height: 55px;
     transition: .5s;
+    float: left;
 }
 
 nav .black .logo img {
@@ -62,36 +61,32 @@ nav.black ul li a.account-links{
     color: #ffffff;
 }
 
-nav ul.nav-links li a.register{
-    color: rgba(250, 7, 7, 0.72);
-}
-
-
-nav ul.nav-links {
+.nav-links {
     float: left;
     margin: 0;
     padding-left: 2em;
     display: flex;
 }
 
-nav ul.nav-links li a {
+.nav-links li a {
     line-height: 80px;
     color: #000000;
     padding: 5px 20px;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
 
 }
 
-nav ul.social {
+.social {
     float: right;
 
     display: flex;
 }
 
-nav ul.social li a {
+.social li a {
     line-height: 0px;
     color: #ffffff;
     display: inline-block;
@@ -100,28 +95,25 @@ nav ul.social li a {
 
 }
 
-
 /* social-media btn color ----------- */
 
 
-.fa-facebook:hover{
-    color: #0036a7;
-}
-/*
-nav ul li i.fa{
-    color: #ffffff;
+li.fb-blue, .fa-facebook:hover{
+    color: #457beb;
 }
 
-nav ul li i.fa{
-    color: #ffffff;
-} */
+li.tweet-blue, .fa-twitter:hover{
+    color: #86adff;
+}
+
+.fb-blue, .fa-facebook:hover{
+    color: #457beb;
+}
 
 nav ul li {
     list-style: none;
 
 }
-
-
 
 .social li {
     border-radius: 50%;
@@ -139,29 +131,19 @@ nav ul li {
 
 /*Pseudo Classes ----------------- */
 
-/* nav ul li a.nav-links.active,
-nav ul li a.nav-links:hover {
-    color: #ff0000;
-
-} */
-
-nav ul li a.active,
-nav ul li a:hover {
+.nav-links a.active,
+.nav-links a:hover {
     color: #ff0000;
 
 }
 
-/* nav.black .nav-links:hover {
-    color: #ff0000;
-} */
-
-nav.black ul li a:hover {
+nav.black ul.nav-links a:hover {
     color: #ff0000;
 }
 
 
 
-/* Layout styles ----------------- */
+/* Layout styles ----------- */
 
 
 /* talk to erin about content */
@@ -177,29 +159,36 @@ nav.black ul li a:hover {
 
 
 /*this is a 2nd option for main image in ***section1*** .... img/riley-blunt.jpg talk with CEO*/
+
+/* Sections ---------- */
+
 section.sec1{
-    width: 100%;
-    height: 100vh;
-    background: url(img/riley-blunt.jpg);
-    background-size: cover;
+    margin-bottom: 25px;
+}
+
+section.sec1 img{
+    max-width: 100%;
+    height: auto;
+
 }
 
 section.sec2{
-    width: 100%;
-    height: 100vh;
-    background: url(img/i-need-stickers.jpg);
-    background-size: cover;
+    margin-bottom: 25px;
 }
+
+section.sec2 img{
+    max-width: 100vw;
+    height: auto;
+
+}
+
 section.sec3{
-    width: 100%;
-    height: 100vh;
-    background: url(img/the-crew.jpg);
-    background-size: cover;
-
-
-section.content{
-    padding: 100px;
+    margin-bottom: 25px;
 }
+
+section.sec3 img{
+    max-width: 100vw;
+    height: auto;
 
 section.content h1{
     margin: 0;
@@ -212,3 +201,5 @@ section.content p{
     padding: 0;
     font-size: 1.1em;
 }
+
+section
